@@ -1,10 +1,12 @@
 import dotenv from "dotenv";
-import app from "./app.js";
+import express from "express";
+import cors from "cors";
+import scheduleRoutes from "./routes/vehicle.routes.js";
 
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
-import scheduleRoutes from "./routes/vehicle.routes.js";
+
 
 const app = express();
 
