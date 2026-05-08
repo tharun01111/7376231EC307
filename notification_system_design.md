@@ -8,3 +8,19 @@ Headers
 Authorization: Bearer <jwt_token>
 Content-Type: application/json
 
+--Stage 2
+{
+  "id": "notif_101",
+  "title": "Placement Drive",
+  "message": "TCS placement drive starts tomorrow",
+  "type": "PLACEMENT",
+  "priority": "HIGH",
+  "isRead": false,
+  "createdAt": "2026-05-08T10:30:00Z",
+  "sender": {
+    "id": "admin_01",
+    "name": "Placement Cell"
+  }
+}
+
+--Stage 3
