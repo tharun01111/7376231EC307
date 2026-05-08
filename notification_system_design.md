@@ -24,3 +24,6 @@ Content-Type: application/json
 }
 
 --Stage 3
+Yes, the query is logically correct.
+But the query becomes slow when the database size increases.
+It does a full table scan and the order by will make it slow.
