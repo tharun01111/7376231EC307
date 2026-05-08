@@ -18,11 +18,10 @@ export const Log = async (stack, level, pkg, message) => {
         message: `${message}`,
       }),
     });
-    console.log(process.env.ACCESS_TOKEN);
     if (!response.ok) {
       console.log("Failed to send log");
     } else {
-      console.log("Log sent successfully");
+      console.log("Log sent successfully", response);
     }
   } catch (error) {
     console.error("Logger Error:", error.message);
